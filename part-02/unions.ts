@@ -1,7 +1,11 @@
+// Type custom name alias
+type Combinable = number | string;
+type ConversionDescriptor = 'as-number' | 'as-text'; // Literals
+
 function combine(
-  input1: number | string,
-  input2: number | string,
-  resultConversion: 'as-number' | 'as-text' // Literals
+  input1: Combinable,
+  input2: Combinable,
+  resultConversion: ConversionDescriptor
 ) {
   let result;
   if (
