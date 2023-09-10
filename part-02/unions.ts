@@ -1,4 +1,4 @@
-// Type custom name alias
+// Type Aliases Custom Types
 type Combinable = number | string;
 type ConversionDescriptor = 'as-number' | 'as-text'; // Literals
 
