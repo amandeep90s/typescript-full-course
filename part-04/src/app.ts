@@ -6,3 +6,17 @@ let age = 30;
 age = 33;
 
 console.log(age);
+
+// Arrow function
+const add = (a: number, b: number) => a + b;
+const result = add(4, 4);
+
+const printOutput: (output: number | string) => void = (result) =>
+  console.log(result);
+printOutput(result);
+printOutput('Hello');
+
+const button = document.querySelector('button');
+if (button) {
+  button.addEventListener('click', (event) => console.log(event));
+}
