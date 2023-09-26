@@ -30,6 +30,8 @@ console.log(activeHobbies);
 const person = {
   name: 'Amandeep',
   age: 30,
+  job: 'Software Engineer',
+  location: 'Bangalore',
 };
 const copyPerson = { ...person, age: 33 };
 console.log(copyPerson);
@@ -42,3 +44,11 @@ const addNumbers = (...numbers: number[]) => {
 };
 const addedNumbers = addNumbers(5, 10, 2, 3.7);
 console.log(addedNumbers);
+
+// Array Destructuring
+const [hobby1, hobby2, ...remainingHobbies] = activeHobbies;
+console.log(hobby1, hobby2, remainingHobbies);
+
+// Object Destructuring
+const { name: firstName, age: totalAge, ...rest } = person;
+console.log(firstName, totalAge, rest);
