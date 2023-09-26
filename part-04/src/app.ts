@@ -33,3 +33,12 @@ const person = {
 };
 const copyPerson = { ...person, age: 33 };
 console.log(copyPerson);
+
+// Rest operator
+const addNumbers = (...numbers: number[]) => {
+  return numbers.reduce((curResult, curValue) => {
+    return curResult + curValue;
+  }, 0);
+};
+const addedNumbers = addNumbers(5, 10, 2, 3.7);
+console.log(addedNumbers);
