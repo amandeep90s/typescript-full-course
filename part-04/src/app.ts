@@ -20,3 +20,16 @@ const button = document.querySelector('button');
 if (button) {
   button.addEventListener('click', (event) => console.log(event));
 }
+
+// Spread operator
+const hobbies = ['Sports', 'Traveling'];
+const activeHobbies = ['Hiking'];
+activeHobbies.push(...hobbies);
+console.log(activeHobbies);
+
+const person = {
+  name: 'Amandeep',
+  age: 30,
+};
+const copyPerson = { ...person, age: 33 };
+console.log(copyPerson);
