@@ -7,9 +7,9 @@ age = 33;
 
 console.log(age);
 
-// Arrow function
-const add = (a: number, b: number) => a + b;
-const result = add(4, 4);
+// Arrow function with default parameters
+const add = (a: number, b: number = 20) => a + b;
+const result = add(4);
 
 const printOutput: (output: number | string) => void = (result) =>
   console.log(result);
