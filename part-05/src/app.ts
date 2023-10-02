@@ -2,7 +2,8 @@ class Department {
   private employees: string[] = [];
 
   // Shorthand Initialization
-  constructor(private id: string, public name: string) {}
+  // Readonly property added extra security to the feature
+  constructor(private readonly id: string, public name: string) {}
 
   describe(this: Department) {
     console.log(`Department ${this.id}: ${this.name}`);
